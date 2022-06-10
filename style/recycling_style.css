@@ -16,6 +16,37 @@ header h1 .span2 {
 .step1 .main_img {
     max-width: 64px;
     margin: 0;
+    opacity: 1;
+    animation: rotateLeftRight linear infinite;
+    animation-duration: 0.9s;
+    animation-delay: 0s;
+}
+
+@keyframes rotateLeftRight {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    25% {
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    75% {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
 }
 
 
@@ -33,7 +64,9 @@ header h1 .span2 {
 }
 
 .step2 .recycle-logo {
-    max-width: 174px;
+    width: 215px;
+    top: 25px;
+    position: relative;
 }
 
 /*step3 style*/
@@ -49,6 +82,7 @@ header h1 .span2 {
 }
 
 .step3 .check {
-    max-width: 100%;
+    width: 220px;
+    top: 50px;
+    position: relative;
 }
-
